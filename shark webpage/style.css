@@ -1,4 +1,11 @@
+body{
+    background-color: #91a7c2;
+    width: 960px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
 
+/* NAV BAR*/
 .grid-container1{
     display: grid;
     grid-template: 1fr/ repeat(3, 1fr);
@@ -12,8 +19,10 @@
 nav ul{
     list-style-type: none;
     display: flex;
+    flex-grow: 0;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    align-content: space-evenly;
     margin: 0;
     padding: 0;
 }
@@ -47,24 +56,45 @@ li a:hover{
     grid-area: main;
     text-align: center;
 }
-
-body{
-    background-color: #91a7c2;
-    margin: 0px;
-}
-
-h1{
-    font-size: 3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 40px;
-}
-
+/*shark icon fixed to the pages*/
 .sharkIcon{
     position: fixed;
     top: 1rem;
     left: 10px;
-    display: inline-block;
+    display: flex;
+    flex-grow: 0;
     justify-content: center;
     width: 100px;
     height: 100px;
+    z-index: -1;
+}
+#title{
+    position: relative;
+    display: flex;
+    flex-grow: 0;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 40px;
+}
+/*HOMEPAGE*/
+
+.picgroup1{
+    height: 350px;
+    width: 650px;
+}
+
+/*ABOUT PAGE*/
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+
+/*FACT PAGE*/
+#bullshark{
+    height: 500px;
+    width: 500px;
 }
