@@ -1,79 +1,153 @@
-body{
-    background-color: #91a7c2;
-    width: 960px;
-    margin: 0 auto;
-    font-family: sans-serif;
+/*LAYOUT TO THE WEBPAGE*/
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-/* NAV BAR*/
-header{
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px, 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer";
+    background-color: #6b7a8d;
+    font-family: 'Calibri', Arial;
+    font-size: 20px;
+}
+
+
+nav{
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    padding: 1rem;
+    background-color: #50595b;
+}
+
+aside{
+    height: calc(100vh - 50px);
+    top: 50px;
+    position: sticky;
+    grid-area: sidebar;
+    z-index: -1;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    padding: 1em;
+}
+
+/*MEDIA QUERY*/
+
+@media(max-width: 800px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        position: fixed;
+        width: 300px;
+        display: none;
+    }
+}
+
+/*NAV BAR*/
+.navBar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-}
-
-li, a {
-    font-family: 'Impact', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
+    flex-grow: 0;
+    padding: 0.5em;
 }
 
 .navLinks{
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 
-.navLinks li {
+.navLinks li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 150px;
 }
 
-
-li a:hover{
-    color: #fbcdf8;
+/*text customisation*/
+.navBar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
 }
 
-/*shark icon fixed to the pages*/
+li, a:hover{
+    color: #70e0fa;
+}
+
+/*SHARK ICON*/
+
 .sharkIcon{
-    position: fixed;
-    top: 1rem;
-    left: 10px;
-    display: flex;
-    flex-grow: 0;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    z-index: -1;
-}
-#title{
-    position: relative;
-    display: flex;
-    flex-grow: 0;
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 40px;
-}
-/*HOMEPAGE*/
-
-.picgroup1{
-    height: 350px;
-    width: 650px;
+    top: 0;
+    position: sticky;
+    width: 4em;
+    height: 4em;
 }
 
-/*ABOUT PAGE*/
+/*HOMEPAGE - SIDEBAR*/
+
+#dancingShark{
+    height: 100vh;
+    width: 35vh;
+}
+
+
+/*ABOUT*/
+
+.sharkAnatomy{
+    list-style: none;
+    text-decoration: none;
+}
+
+.sharkAnatomy, li, a{
+    color: black;
+}
+
+
 form{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    background-color: #7693ae;
+    width: 50%;
+    margin: 0 auto;
+}
+
+label{
+    margin-right: 5px;
+    font-family: 'calibri', sans-serif;
+    padding: 10px 2em;
+}
+
+/*GALLERY*/
+.galleryGrid{
+    display: grid;
+    gap: 1rem;
+    height: 50px;
+    width: 70px;
+}
+
+#photoTall{
+    grid-row: span 2 / auto;
+}
+
+#photoWide{
+    grid-column: span 2 / auto;
 }
 
 
-/*FACT PAGE*/
-#bullshark{
-    height: 500px;
-    width: 500px;
-}

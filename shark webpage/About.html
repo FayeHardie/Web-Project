@@ -3,33 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/crocodile shark.png">
-    <title>ABOUT</title>
+    <script defer src="script.js"></script>
+    <title>About</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="HomePage.html"><img class="sharkIcon" src="/images/shark icon.png"></img></a>
-            <ul class="navLinks">
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Fact Page.html">Fact Page</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navBar">
+        <a href="Homepage.html"><img class="sharkIcon" src="/images/shark icon.png"></img></a>
+        <ul class="navLinks">
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Types.html">TYPES</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+    </nav>
+    <aside id="sidebar">Sidebar</aside>
     <main>
-        <p>This website celebrates sharks for all the good they do for the environment and how cool they are.</p>
+        <h1>ABOUT</h1>
+        <h3>What is a shark?</h3><br>
+        <p>Sharks belong to the cartilaginous fish group. This means fish that have a simple internal
+            skeleton formed by cartilage.</p><br>
+        <h3>Body structure of a shark.</h3><br>
+        <p>The basic body structure of a shark has remained the same for millions of years.</p>
+        <ul class="sharkAnatomy">
+            <li>Caudal fin - they are thought to provide stability whilst swimming.</li>
+            <li>Dorsal fins - in the majority of sharks, the first is larger than the second (if there is more than one).</li>
+            <li>Pelvic fins - in males these have claspers (claspers - male reproductive anatomical structure) with them.</li>
+            <li>Pectoral fins - they produce lift and help the sharks control swimming.</li>    
+            <li>Gill slits - majority of sharks have 5 however a few species have 6 or 7!</li>
+            <li>Spiracles - they are found behind the eye in most sharks, largely found in bottom-dwelling sharks.
+                Spiracles are used to take in water and ventilate the gills even while the shark could be feeding or resting.</li>
+            <li>Eyes - most species have moveable eyelids, others have protective eyelids called 'nictitating' lower eyelids.</li>  
+            <li>Ampullae of Lorenzini - sensitive electrical field detectors, they look like tiny little black heads, but are extremely important for foraging and navigation.</li> 
+        </ul><br>
+        <figure class="sharkDiagram">
+            <img src="/images/shark diagram.jpg">
+        </figure><br>      
+        <p class="formTitle">Sign up for more news about sharks!</p>
         <form>
-            <h2>Sign Up Here!</h2>
-            <label for="text">Name: </label>
-            <input type="text" id="text"><br>
-            <label for="email">Email: </label>
-            <input type="email" id="email"><br>
-            <input type="submit" id="submit" value="Submit">
-        </form>
+            <label id="formName" for="text">NAME:</label>
+            <input type="text" id="text">
+            <label id="formEmail" for="email">EMAIL:</label>
+            <input for="email" id="email">
+            <input type="submit" id="submit" value="submit">
+        </form>        
     </main>
-
+    <footer>
+        <h2>Time to respect sharks</h2>
+    </footer>
 </body>
 </html>
