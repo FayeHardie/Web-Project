@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/crocodile shark.png">
+    <link rel="icon" type="image/x-icon" href="/images/shark icon.png">
     <script defer src="script.js"></script>
     <title>Gallery</title>
 </head>
 <body>
     <nav class="navBar">
-        <a href="Homepage.html"><img class="sharkIcon" src="/images/shark icon.png"></img></a>
-        <ul class="navLinks">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="Homepage.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Types.html">TYPES</a></li>
             <li><a href="Gallery.html">GALLERY</a></li>
         </ul>
+        <ul>
+            <li><a href="Homepage.html"><img class="sharkIcon" src="/images/crocodile shark.png"></a></li>
+            <li class="hideSmallScreen"><a href="Homepage.html">HOME</a></li>
+            <li class="hideSmallScreen"><a href="About.html">ABOUT</a></li>
+            <li class="hideSmallScreen"><a href="Types.html">TYPES</a></li>
+            <li class="hideSmallScreen"><a href="Gallery.html">GALLERY</a></li>
+            <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
     </nav>
-    <aside id="sidebar"></aside>
     <main>
         <h1>GALLERY</h1>
-        <figure class="galleryGrid">
-            <img id="photoWide" src="/images/basking shark1.jpg">
-            <img src="/images/blacktip reef shark1.jpg">
-            <img src="/images/blue shark3.png">
-            <img src="/images/coral catshark.jpg">
-            <img id="photoTall" src="/images/great white shark1.jpg">
-        </figure>
+        <section class="galleryGrid">
+            <img class="galleryitem" class="item-wide" src="/images/basking shark1.jpg" alt="basking shark">
+            <img class="galleryitem" src="/images/blacktip reef shark1.jpg" alt="blacktip reef shark">
+            <img class="galleryitem" src="/images/blue shark3.png" alt="blue shark">
+            <img class="galleryitem" src="/images/coral catshark.jpg" alt="catshark">
+            <img class="galleryitem" src="/images/great white shark1.jpg" alt="great white shark">
+            <img class="galleryitem" src="/images/broadnose sevengill shark.png" alt="broadnose sevengill">
+            <img class="galleryitem" src="/images/epaulette shark1.jpg" alt="epaulette shark">
+            <img class="galleryitem" src="/images/bullshark.png" alt="bull shark">
+            <img class="galleryitem" src="/images/sandbar shark.jpg" alt="sandbar shark">
+            <img class="galleryitem" src="/images/port jackson shark1.jpg" alt="port jackson">
+            <img class="galleryitem" class="item-tall" src="/images/whale shark1.jpg" alt="whale shark">
+            <img class="galleryitem" src="/images/tiger shark1.png" alt="tiger shark">
+        </section>
     </main>
-    <footer>
-        <h2>Footer</h2>
-    </footer>
 </body>
 </html>

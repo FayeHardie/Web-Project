@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* NAV BAR*/
+
+nav{
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    padding: 1rem;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    padding: 0.5em;
+    background-color: #ededed;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 150px;
+}
+
+/*text customisation*/
+.navBar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.navBar li a:hover{
+    color: #70e0fa;
+}
+
+.sharkIcon{
+    height: 40%;
+    width: 45%;
+}
+
+/*LAYOUT OF PAGE*/
+
+/*SLIDER*/
+.sectionContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+
+.slider{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color: red;
+}
+
+.slider .species{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
