@@ -1,8 +1,9 @@
 /*baseline layout for further styling*/
 
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -145,7 +146,120 @@ nav li:first-child{
     border-width: 5px;
 }
 
-/*TYPES*/
+/*SPECIES PAGE V1*/
+
+/*.sliderContainer{
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.sliderItems img{
+    width: 100%;
+}
+*/
+
+/*SPECIES PAGE*/
+
+.slideContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.textbox{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textbox .images{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.textbox .slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* shows slide */
+.slide.active{
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+}
+
+/* styling paragraph to center */
+.slide p{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+/* shark names*/
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name{
+    font-size: 30px;
+}
+
+.details .scienceName{
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* button placement */
+.nextBtn{
+    position: absolute;
+    transform: translate(450px);
+    cursor: pointer;
+}
+
+.prevBtn{
+    position: absolute;
+    transform: translate(-450px);
+    cursor: pointer;
+}
+
+.nextBtn, .prevBtn{
+    border: none;
+    font-size: 40px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
 
 
 /*GALLERY*/

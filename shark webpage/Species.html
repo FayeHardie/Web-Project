@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/shark icon.png">
+    <script defer src="species.js"></script>
+    <title>Species</title>
+</head>
+<body>
+    <nav class="navBar">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Species.html">SPECIES</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+        <ul>
+            <li><a href="Homepage.html"><img class="sharkIcon" src="/images/crocodile shark.png"></a></li>
+            <li class="hideSmallScreen"><a href="Homepage.html">HOME</a></li>
+            <li class="hideSmallScreen"><a href="About.html">ABOUT</a></li>
+            <li class="hideSmallScreen"><a href="Species.html">SPECIES</a></li>
+            <li class="hideSmallScreen"><a href="Gallery.html">GALLERY</a></li>
+            <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <main>
+        <br>
+        <h1>Different species of sharks</h1>
+        <!--<section class="sliderContainer">
+            <div class="sliderItems">
+                <img class="species" id="species" src="/photoslider/1.png" alt="blue shark">
+            </div>
+            <button id="prev" onclick=prevSlide()>&#60</button>
+            <button id="next" onclick=nextSlide()>&#62</button>
+        </section>
+        -->
+        <section class="slideContainer">
+            <div class="textbox">
+                <div class="slideContent">
+
+                    <div class="slide active">
+                        <img class="images" src="/photoslider/1.png" alt="blue shark"/>
+                        <div class="details">
+                            <span class="name">Blue Shark</span>
+                            <span class="scienceName">Prionace glauca</span>
+                        </div>
+                        <p>The blue shark is an open-ocean shark (pelagic) species that visits the UK seas in the summer. 
+                        They are active predators and feed mainly on small fish and squid, although they are also known to
+                        eat sea birds and other small sharks. They have been recorded reaching depths of up to 350m to feed.
+                        The largest blue shark caught measured to be over 9ft (2.74m).
+                        </p>
+                    </div>
+
+                    <div class="slide">
+                        <img class="images" src="/photoslider/2.png" alt="greenland shark"/>
+                        <div class="details">
+                            <span class="name">Greenland Shark</span>
+                            <span class="scienceName">Somniosus microcephalus</span>
+                        </div>
+                        <p>The greenland shark is a member of the sleeper shark family. The species is primarily found in cold waters
+                            such as the Arctic Ocean and the North Atlantic, their range also extends to the North Sea. The species can 
+                            reach a length of 23ft (7m) when fully grown but most are between 6.5ft and 13ft. The life span of this creature
+                            can be as long as 500 years.
+                        </p>
+                    </div>
+
+                    <div class="slide">
+                        <img class="images" src="/photoslider/3.png" alt="greenland shark"/>
+                        <div class="details">
+                            <span class="name">Horn Shark</span>
+                            <span class="scienceName">Heterodontus francisci</span>
+                        </div>
+                        <p>Horn sharks are not the most graceful of swimmers and tend to stick to the sea floor, they have been seen using their
+                            pectoral fins to crawl along rocks. They can be found in kelp forests and their diet consists of crustaceans, sea urchins 
+                            and small fishes. Females lay spiral egg cases as seen in the image.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="nextBtn" onclick="nextSlide()">&#62</button>
+            <button class="prevBtn" onclick="prevSlide()">&#60</button>
+        </section>
+
+    </main>
+    <footer>
+        <section class="formContainer">
+            <form class="formItems">
+                <label class="formTitle">Sign up for more shark related news!</label><br>
+                <div class="formRow">
+                    <label for="username" id="usernameLabel">Name:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="email" id="emailLabel">Email:</label>
+                    <input for="email" id="email" name="email">
+                    <button for="submit" id="submit">SUBMIT</button>
+                </div>  
+            </form>
+        </section>
+    </footer>
+</body>
+</html>
