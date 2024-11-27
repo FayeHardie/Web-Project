@@ -146,21 +146,6 @@ nav li:first-child{
     border-width: 5px;
 }
 
-/*SPECIES PAGE V1*/
-
-/*.sliderContainer{
-    position: relative;
-    width: 50%;
-    margin: 50px auto;
-}
-
-.sliderItems img{
-    width: 100%;
-}
-*/
-
-/*SPECIES PAGE*/
-
 .slideContainer{
     height: 100vh;
     width: 100%;
@@ -309,11 +294,12 @@ nav li:first-child{
 }
 
 .formTitle{
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
     display: block;
     text-align: center;
+    padding: 0 0 15px;
 }
 
 .formRow{       /*label, input and button on same row*/
@@ -342,5 +328,5 @@ nav li:first-child{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     border-radius: 4px;
-    background-color: #555555;
+    background-color: #d2d2d2;
 }
